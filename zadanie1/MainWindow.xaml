@@ -1,0 +1,26 @@
+﻿<Window x:Class="pz1_penkina.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pz1_penkina"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="308" Width="544">
+    <StackPanel>
+        <TextBlock Text="Текст" Width="300" HorizontalAlignment="Left"/>
+        <ScrollViewer MaxHeight="300" Width="300" HorizontalAlignment="Left">
+            <TextBox x:Name="tbText" TextWrapping="Wrap" AcceptsReturn="True"/>
+        </ScrollViewer>
+
+        <TextBlock Text="Поиск" Width="300" HorizontalAlignment="Left"/>
+        <TextBox x:Name="tbSearch" Width="300" HorizontalAlignment="Left"/>
+
+        <Button Content="Найти" Click="Button_Click" Width="80" HorizontalAlignment="Left"/>
+        <Button Content="Очистить" Click="Button_Click_1" Width="80" HorizontalAlignment="Left"/>
+
+        <TextBlock Text="Результат" Width="300" HorizontalAlignment="Left"/>
+        <TextBox x:Name="tbResult" Width="300" HorizontalAlignment="Left"/>
+        <Button Content="Выйти" Width="80" Click="Button_Click_2"/>
+
+    </StackPanel>
+</Window>
